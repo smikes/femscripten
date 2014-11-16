@@ -1,6 +1,5 @@
 #!/bin/sh
 
-FEMSCRIPTEN_ROOT=/mnt/test
 FEM_LIB=${FEMSCRIPTEN_ROOT}/lib
 FEM_DRAGON=${FEM_LIB}/dragonegg.so
 

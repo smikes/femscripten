@@ -1,0 +1,6 @@
+#!/bin/sh
+
+SRC="$1"
+
+emgf-1 "${SRC}"
+emgf-2 "${SRC}"

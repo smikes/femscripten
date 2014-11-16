@@ -3,6 +3,7 @@
 SRC="$1"
 ASM="$(basename $SRC .f).s"
 LL="$(basename $SRC .f).ll"
+OBJ="$(basename $SRC .f).o"
 
 cat >${LL}<<EOF 
 ; ModuleID = '$SRC'
@@ -11,5 +12,6 @@ target triple = "asmjs-unknown-emscripten"
 EOF
 
 tail -n +4 ${ASM} >>${LL}
+llvm-as ${LL} -o ${OBJ}
 
 
