@@ -6,6 +6,12 @@ a working FORTRAN -> Javascript compiler.
 ## TODO
 
 1. Actually deliver on claim #1 above
+- [x] make Docker image that can run emscripten
+- [x] add gcc + dragonegg to image
+- [x] produce C main + Fortran obj
+- [ ] make F->js library files
+- [ ] support Fortran standard library (small)
+- [ ] support Fortran main
 
 ## Work in Progress
 
