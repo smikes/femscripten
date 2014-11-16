@@ -7,7 +7,7 @@
 #   docker run smikes/femscripten /srv/var/emscripten/emcc -v
 #   docker run -v `pwd`:/mnt/test smikes/femscripten /srv/var/emscripten/emcc /mnt/test/test.cpp -o /mnt/test/test.cpp.js
 
-# VERSION 2.0.0
+# VERSION 2.0.1
 # derived from cmfatih/emscripten 1.0.1
 # and from nacyot/fortran-gfortran
 
@@ -28,9 +28,11 @@ RUN \
         curl \
         dragonegg \
         g++ \
+        gcc-4.6-plugin-dev \
         gfortran \
         git \
         htop \
+        libgmp3-dev \
         make \
         nodejs \
         python \
@@ -66,7 +68,7 @@ RUN \
   apt-get clean all
 
 # Env
-ENV PATH $PATH:/srv/var/emscripten:/srv/var/emscripten-fastcomp/build/Release/bin/
+ENV PATH $PATH:/srv/var/emscripten:/srv/var/emscripten-fastcomp/build/Release/bin/:/mnt/test/bin
 ENV LLVM /srv/var/emscripten-fastcomp/build/Release/bin/
 
 # Default command
