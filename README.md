@@ -40,7 +40,7 @@ emcc times_main.c times.c -o times-c.js
 Compile a fortran source into LLVM bitcodes (seems to work)
 
 ```
-gfortran hello_world.f -S -flto -m32 -fplugin=/usr/lib/gcc/x86_64-linux-gnu/4.6/plugin/dragonegg.so -o hello_world.ll
+dragonegg_disable_version_check=1 gfortran hello_world.f -S -flto -m32 -fplugin=/usr/lib/gcc/x86_64-linux-gnu/4.6/plugin/dragonegg.so -o hello_world.ll
 ```
 
 Assemble an LLVM bitcode (counterproductive?)
