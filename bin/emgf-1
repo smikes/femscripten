@@ -1,3 +1,9 @@
 #!/bin/sh
 
-dragonegg_disable_version_check=1 gfortran -S -flto -m32 -fplugin=/usr/lib/gcc/x86_64-linux-gnu/4.6/plugin/dragonegg.so $*
+FEMSCRIPTEN_ROOT=/mnt/test
+FEM_LIB=${FEMSCRIPTEN_ROOT}/lib
+FEM_DRAGON=${FEM_LIB}/dragonegg.so
+
+gfortran -S -flto -m32 -fplugin=${FEM_DRAGON} -fverbose-asm -c "$*"
+
+
