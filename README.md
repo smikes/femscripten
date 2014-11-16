@@ -1,6 +1,6 @@
 # Fortran -> JS Docker image
 
-This project provides a [https://www.docker.com/](Docker) image that contains
+This project provides a [Docker](https://www.docker.com/) image that contains
 a working FORTRAN -> Javascript compiler.
 
 ## TODO
@@ -9,7 +9,7 @@ a working FORTRAN -> Javascript compiler.
 
 ## Work in Progress
 
-There is a [https://registry.hub.docker.com/u/smikes/femscripten/](docker image) that includes llvm, gfortran, dragonegg, and emscripten.
+There is a [docker image](https://registry.hub.docker.com/u/smikes/femscripten/) that includes llvm, gfortran, dragonegg, and emscripten.
 
 I am trying to figure out how to do automate testing and how to automate
 compilation of simple hello-world examples.
