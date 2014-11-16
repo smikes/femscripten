@@ -1,0 +1,30 @@
+{
+  "name": "femscripten",
+  "version": "1.0.0",
+  "description": "Docker image for Fortran -> js compilation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smikes/femscripten.git"
+  },
+  "keywords": [
+    "fortran",
+    "emscripten",
+    "lapack",
+    "blas"
+  ],
+  "author": "Sam Mikes <smikes@cubane.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smikes/femscripten/issues"
+  },
+  "homepage": "https://github.com/smikes/femscripten",
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "jslint": "^0.6.6",
+    "mocha": "^2.0.1"
+  }
+}
