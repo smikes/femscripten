@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dragonegg_disable_version_check=1 gfortran -S -flto -m32 -fplugin=/usr/lib/gcc/x86_64-linux-gnu/4.6/plugin/dragonegg.so $*
