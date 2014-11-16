@@ -1,3 +1,3 @@
-float times(float * a, float * b) {
+float times_(float * a, float * b) {
     return (*a)*(*b);
 }
