@@ -26,5 +26,8 @@
     "istanbul": "^0.3.2",
     "jslint": "^0.6.6",
     "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "nan": "^1.4.1"
   }
 }
